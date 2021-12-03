@@ -1,5 +1,5 @@
 import { types } from '../types/types';
-import { collection, addDoc,getDocs,updateDoc,doc,deleteDoc } from "firebase/firestore";
+import { collection, addDoc,getDocs } from "firebase/firestore";
 import { db } from '../firebase/firebaseConfig';
 
 
