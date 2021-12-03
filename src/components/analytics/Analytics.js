@@ -21,7 +21,6 @@ export const Analytics = () => {
     const handleSearch = (e) => {
         e.preventDefault();
         dispatch(getClientId(dni))
-        // console.log(dni);
     }
 
     return (

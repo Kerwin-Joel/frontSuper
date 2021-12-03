@@ -47,10 +47,8 @@ export const setClientId = (client) => {
 
 export const getClientId = (id) => {
     return async(dispatch,getState) => {
-        console.log(id)
         const clients = getState().clients;
         const clientCurrent = clients.filter(client => client.dni === id);
-        console.log(clientCurrent)
         dispatch(setClientId(...clientCurrent));
     }
 }

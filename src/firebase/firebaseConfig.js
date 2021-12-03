@@ -16,15 +16,5 @@ const firebaseApp = initializeApp({
 const db = getFirestore(firebaseApp);
 
 
-// const fire = async()=>{
-//     const querySnapshot = await getDocs(collection(db, "preuba"));
-//     querySnapshot.forEach((doc) => {
-//         console.log(doc.data());
-//     });
-// }
-
-// fire();
-
-
 
 export { db }

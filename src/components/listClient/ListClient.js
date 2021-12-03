@@ -29,7 +29,6 @@ export const ListClient = () => {
     //     },
     // ]
 
-    // const [clients,setClients] = useState([])
     const [average, setAverage] = useState([])
     const [deviation, setDeviation] = useState([])
     
@@ -48,7 +47,6 @@ export const ListClient = () => {
             let arr = clients.map((k)=>(k.age - averageAge) ** 2)
             let sum = arr.reduce((acc, curr)=> acc + curr);
             let variance = sum / arr.length
-            console.log(clients)
 
             return setDeviation(Math.sqrt(variance).toFixed(2))
         }
